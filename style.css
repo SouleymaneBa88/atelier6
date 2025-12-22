@@ -76,7 +76,7 @@ header .button-header .Connexion:hover{
 }
 
 #home{
-    height: 85vh;
+    height: 75vh;
     text-align: center;
 }
 #home .div{
@@ -100,17 +100,17 @@ header .button-header .Connexion:hover{
     margin-top: 20vh;
     margin-left: 10vh;
 }
-#home h2{
+#home h1{
     color: #fff;
     text-align: center;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 32px;
     /* margin-left: 42vh; */
     z-index: 1;
 
 }
-#home h2 span{
-    color: #F2C84B
+#home h1 span{
+    color: #F2C84B;
 }
 #home .text p{
     /* margin-left: 40vh; */
@@ -119,32 +119,14 @@ header .button-header .Connexion:hover{
     font-size: 18px;
 }
 
-/* #home .div .plat{
-    width: 30%;
-    height: 40%; */
-    /* background: url(images/thieboudieunerouge.webp);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color: #3A1403; */
-    /* position: relative;
-    top: 45%; */
-    /* margin-right: 35px; */
-    /* border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
-    z-index: 1;
-    position: absolute;
-    left: 65%;
-    top: 40%;
-    overflow: hidden; 
-}*/
+
 #home .div .cours-input img{
         /* background: url(images/thieboudieunerouge.webp); */
     width: 45%;
     height: 30%;
     background-color: #c46b41;
     margin-top: 20vh;
-    margin-left: 45vh;
+    margin-left: 35vh;
     border-radius: 10px;
 } 
 #home .div .cours-input input{
@@ -157,9 +139,10 @@ header .button-header .Connexion:hover{
     color: #E65100;
 }
 #home .note{
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    position: relative;
+    bottom: 150px;
     margin: 10px;
-    height: 45vh;
 }
 #home .note .div-not{
     display: flex;
@@ -266,15 +249,19 @@ header .button-header .Connexion:hover{
     padding: 20px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
 }
-.avis .commentaires aside{
+.avis .commentaires {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
-.avis .commentaires aside span{
+.avis .commentaires div span{
     /* border: 1px solid white; */
     padding: 5px;
     border-radius: 50%;
     height: 40px;
+}
+.avis .commentaires div p{
+    text-align: center;
 }
 .avis .commentaires .primairo span{
     border:1px solid #B66B30;
@@ -294,10 +281,10 @@ header .button-header .Connexion:hover{
     background-color: #54bb2b;
     /* color: #FFFFFF; */
 }
-.avis .commentaires aside p .fa-solid{
+.avis .commentaires  p .fa-solid{
     color: #e4a41b;
 }
-.avis .commentaires aside p #i{
+.avis .commentaires  p #i{
     color: #838080;
 }
 
@@ -339,6 +326,12 @@ header .button-header .Connexion:hover{
     color: #B66B30;
     background-color: #FFFFFF;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+}
+.livrer .font-livrer .text-livrer button:hover{
+    transition: 0.5s;
+    transform: rotate(360deg);
+    background-color: #B66B30;
+    color: #FFF3E0;
 }
 
 footer{
