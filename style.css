@@ -109,7 +109,6 @@ header .button-header .Connexion:hover{
     z-index: 1;
 
 }
-#home .text{}
 #home h2 span{
     color: #F2C84B
 }
@@ -160,6 +159,7 @@ header .button-header .Connexion:hover{
 #home .note{
     padding-top: 20px;
     margin: 10px;
+    height: 45vh;
 }
 #home .note .div-not{
     display: flex;
@@ -184,7 +184,7 @@ header .button-header .Connexion:hover{
 
 #service{
     background-color: #FFFFFF;
-    margin-top: 20vh;
+    margin-top: 45vh;
     text-align: center;
     height: 35vh;
 }
