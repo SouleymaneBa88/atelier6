@@ -77,64 +77,82 @@ header .button-header .Connexion:hover{
 
 #home{
     height: 85vh;
+    text-align: center;
 }
 #home .div{
-    background-color: #3A1403 ;
-    height: 75vh;
     position: relative;
     opacity: 0.6;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 10px;
 }
 #home .font {
     background:url(images/banner-head-accueil.jpg);
     background-position: center;
     background-size: cover;
     margin-bottom: 30%;
+    background-blend-mode: multiply;
+    background-color: #61260b;
     height: 75vh;
     z-index: 0;
 }
-#home h1{
+.text{
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+#home h2{
     color: #fff;
     text-align: center;
-    padding-top: 30vh;
     font-weight: bold;
     font-size: 28px;
-    margin-left: 42vh;
+    /* margin-left: 42vh; */
     z-index: 1;
 
 }
-#home h1 span{
+#home .text{}
+#home h2 span{
     color: #F2C84B
 }
 #home .text p{
-    margin-left: 40vh;
+    /* margin-left: 40vh; */
     text-align: center;
     color: #fff;
+    font-size: 18px;
 }
 
-#home .div .plat{
+/* #home .div .plat{
     width: 30%;
-    height: 40%;
-    background: url(images/thieboudieunerouge.webp);
+    height: 40%; */
+    /* background: url(images/thieboudieunerouge.webp);
     background-position: center;
     background-size: cover;
-    position: relative;
-    top: 45%;
+    background-blend-mode: multiply;
+    background-color: #3A1403; */
+    /* position: relative;
+    top: 45%; */
     /* margin-right: 35px; */
-    border-radius: 30px;
+    /* border-radius: 30px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
     z-index: 1;
     position: absolute;
     left: 65%;
     top: 40%;
-    overflow: hidden;
-}
-#home .div .cours-input input{
-    position: relative;
-    left: 30vh;
+    overflow: hidden; 
+}*/
+#home .div .cours-input img{
+        /* background: url(images/thieboudieunerouge.webp); */
+    width: 45%;
+    height: 30%;
+    background-color: #c46b41;
+    margin-top: 20vh;
+    margin-left: 45vh;
     border-radius: 10px;
-    margin: 10px;
+} 
+#home .div .cours-input input{
+    /* position: relative; */
+    /* left: 30vh; */
+    border-radius: 10px;
+    /* margin: 10px; */
 }
 #home .div .cours-input input::placeholder{
     color: #E65100;
@@ -298,6 +316,8 @@ header .button-header .Connexion:hover{
     background:url(images/banner-head-accueil.jpg);
     background-position: center;
     background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #3A1403;
     margin-bottom: 30%;
     height: 45vh;
 }
