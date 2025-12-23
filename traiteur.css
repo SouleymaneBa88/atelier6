@@ -15,7 +15,10 @@ header{
     padding: 10px;
     background-color: #FFFFFF;
     position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 2;
+    transform: rotateY('90deg');
 }
 header .logo-header img{
     width: 20%;
