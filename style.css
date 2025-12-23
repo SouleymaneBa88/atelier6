@@ -7,7 +7,7 @@
 }
 body{
     /* padding: 10px 4%; */
-    background-color: #FFF3E0;
+    background-color: #FFF3E0;  
 }
 header{
     display: flex;
@@ -18,15 +18,17 @@ header{
     top: 0;
     width: 100%;
     z-index: 2;
+    transform: rotateY('90deg');
 }
 header .logo-header img{
-    width: 30%;
+    width: 20%;
 }
 header nav ul{
     list-style: none;
     display: flex;
     /* margin: 10px; */
-    gap: 25px;
+    justify-content: space-between;
+    gap: 15px;
     padding-top: 30px;
 }
 header nav ul li a{
@@ -45,20 +47,20 @@ header nav ul li a:hover{
 header .button-header{
     display: flex;
     padding-top: 19px;
-    gap: 10px;
+    gap: 5px;
 }
 header .button-header button{
-    height: 45%;
+    /* height: 45%; */
     border-radius: 10px;
     background-color: #FFFFFF;
     color: black;
     border: 0;
     font-size: 14px;
     font-weight: bold;
-    padding: 15px 4%;
     text-align: center;
+    padding: 10px 6%;
     transition: 0.5s;
-    margin-right: 40px;
+    margin-right: 65px;
 }
 header .button-header .Inscription{
     background-color: #E65100;
@@ -130,16 +132,11 @@ header .button-header .Connexion:hover{
     border-radius: 10px;
 } 
 #home .div .cours-input input{
-    /* position: relative; */
-    /* left: 30vh; */
+    position: relative;
+    left: 26%;
+    top: -30%;
+    background-color: #fff;
     border-radius: 10px;
-    /* margin: 10px; */
-}
-#home .div .cours-input input::placeholder{
-    color: #E65100;
-}
-#home .note{
-    /* padding-top: 20px; */
     position: relative;
     bottom: 150px;
     margin: 10px;

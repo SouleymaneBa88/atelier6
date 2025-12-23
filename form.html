@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+     <!-- entete du page -->
+     <header>
+        <div class="logo-header">
+            <img src="images/logo.png" alt="image du logo-header" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="">Restaurants</a></li>
+                <li><a href="">Cours de Cuisine</a></li>
+                <li><a href="traiteur.html">Traiteurs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="button-header">
+            <button class="Connexion">Connexion</button>
+            <button class="Inscription"><a href="form.html">Inscripion</a></button>
+        </div>
+    </header>
+
+     <!-- section 1 -->
+     <section class="banner">
+        <div class="text-banner">
+            <h1>Devenir  Traiteurs</h1>
+            <p>Rejoignez notre plateforme et developpez votre activite de traiteur</p>
+        </div>
+     </section>
+
+     <!-- section formulaire -->
+      <section class="formulaire">
+        <form >
+            <fieldset class="infoBase">
+                <legend>Information de base</legend>
+                <div class="form-group">
+                    <label for="name">Nom complet</label> 
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="mdp">Mot de passe</label>
+                    <input type="password" name="mdp" id="mdp">
+                </div>
+                <div class="form-group">
+                    <label for="cmdp">Confirmer le mot de passe</label> 
+                    <input type="password" name="cmdp" id="cmdp">
+                </div>
+            </div>
+            </fieldset>
+            <fieldset class="infoPro">
+                <legend>Informations professionnels</legend>
+                <div class="form-group">
+                    <label for="select">Categorie</label>
+                    <select name="select" id="select">
+                        <option value="select cate" selected>Selectionnez ue Categorie</option>
+                        <option value="ww">www</option>
+                        <option value="wwwww">www</option>
+                        <option value="w">wwwwww</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="annee">Annee d'experience</label>
+                    <input type="text" name="annee" id="annee">
+                </div>
+                <div class="form-group">
+                    <label for="avi">Avis</label>
+                    <textarea name="des" id="avi"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="services">
+                <legend>Services proposes</legend>
+                <span>
+                <label for="mariage">Mariage</label>
+                <input type="checkbox" name="mariage" id="mariage">
+                <label for="even">Evenements d'entreprise</label>
+                <input type="checkbox" name="even" id="even">
+                <label for="Buffet">Buffet</label>
+                <input type="checkbox" name="Buffet" id="Buffet">
+                <label for="Cuisine">Cuisine</label>
+                <input type="checkbox" name="Cuisine" id="Cuisine">
+                </span>
+                <span>
+                <label for="anniversaire">anniversaire</label>
+                <input type="checkbox" name="anniversaire" id="anniversaire">
+                <label for="cock">Cocktaills</label>
+                <input type="checkbox" name="cock" id="cock">
+                <label for="diner">Diner prives</label>
+                <input type="checkbox" name="diner" id="diner">
+                </span>
+            </fieldset>
+            <fieldset class="infoContact">
+                <legend>Informations de contact</legend>
+                <div class="form-group">
+                    <label for="tel">Telephone</label>
+                    <input type="number" name="tel" id="tel">
+                </div>
+                <div class="form-group">
+                    <label for="add">Addresse</label>
+                    <input type="text" name="add" id="add">
+                </div>
+            </fieldset>
+            <fieldset class="profil">
+                <legend>Photo de profil</legend>
+                <div class="form-group">
+                    <label for="photo">Photo</label>
+                    <input type="file" name="photo" id="photo" accept="image/*" value="Choisir un fichier"> 
+                </div>
+            </fieldset>
+                <p><br>Formats acceptes: JPG, JPEG, PNG, .Taille maximale:10MB</p>
+        </form>
+      </section>
+        <!-- footer -->
+       <footer>
+    <div class="table">
+        <div class="table-col">
+            <pre>
+                <span>A propos</span>
+
+                Qui sommes-nous
+
+                contact
+
+                Mentions legales
+
+                Politique de confidentialite
+
+            </pre>
+            <pre>
+                <span>Services</span>
+
+                Traiteurs
+
+                Restaurants
+
+                Cours
+            </pre>
+            <pre>
+                <span>Espace Pro</span>
+
+                Devenir partenaire
+
+                Connexion
+
+                FAQ professionnels
+            </pre>
+            <pre>
+                <span>Contact</span>
+
+                Star Buffet
+                Dakar, senegal
+
+                Tel:+221 77 000 00 00
+                Email:contact@Starbuff.com
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </pre>
+        </div>
+        <hr>
+        <p>© 2025 star Buffet. Tous droits reserves.</p>
+    </div>
+ </footer>
+    
+</body>
+</html>
