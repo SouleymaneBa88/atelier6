@@ -135,6 +135,12 @@ header .button-header .Connexion:hover{
     margin-bottom: 15px;
     position: relative;
 }
+.salad1 img{
+    width: 30%;
+}
+.salad1 article{
+    padding-bottom: 10px;
+}
 .menu .trie h2{
     padding: 10px;
 }
@@ -165,7 +171,7 @@ header .button-header .Connexion:hover{
 }
 .menu .meun-trie-button button:first-child{
     background-color: #E65100;
-    transition: 0,5s;
+    transition: 0.5s;
     color: #FFFFFF;
 
 }
@@ -232,6 +238,31 @@ header .button-header .Connexion:hover{
     bottom: 25px;
     right: 3%;
     border-radius: 10px;
+    padding:10px;
+}
+.salad1 .Verifie{
+    background-color: rgb(198, 216, 210);
+    color: green;
+    position: absolute;
+    top: 3vh;
+    left: 19%;
+    width: 10%;
+    /* padding: 10px; */
+    /* height: 5vh; */
+    border-radius: 10px;
+    text-align: center;
+}
+.salad .Verifie{
+    background-color: rgb(198, 216, 210);
+    color: green;
+    position: absolute;
+    top: 3vh;
+    left: 19%;
+    width: 10%;
+    /* padding: 10px; */
+    /* height: 5vh; */
+    border-radius: 10px;
+    text-align: center;
 }
 .menu .salad1 .icon{
     position: absolute;
