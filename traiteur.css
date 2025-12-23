@@ -139,6 +139,7 @@ header .button-header .Connexion:hover{
     width: 30%;
 }
 .salad1 article{
+    padding-top: 0;
     padding-bottom: 10px;
 }
 .menu .trie h2{
