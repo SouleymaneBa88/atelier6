@@ -11,7 +11,7 @@ body{
 }
 header{
     display: flex;
-    justify-content:space-between ;
+    justify-content:space-around ;
     padding: 10px;
     background-color: #FFFFFF;
     position: sticky;
@@ -26,7 +26,7 @@ header .logo-header img{
 header nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 15px;
     padding-top: 30px;
 }
@@ -105,11 +105,11 @@ header .button-header .Connexion:hover{
 }
 .trie{
     grid-area:trie;
-    /* border: 1px solid; */
-    /* background-color: #FFFFFF; */
     display: flex;
     justify-content: space-around;
     margin-bottom: 25px;
+    width: 50%;
+    margin: 0 auto;
 }
 .salad{
     grid-area:salad;
@@ -146,7 +146,7 @@ header .button-header .Connexion:hover{
     padding-bottom: 10px;
 }
 .menu .trie h2{
-    padding: 10px;
+    padding-top: 5%;
 }
 .menu .trie .special,.traiteur{
     padding: 10px;

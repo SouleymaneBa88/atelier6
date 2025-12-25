@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #FFF3E0;
+}
+
+header{
+    display: flex;
+    justify-content:space-between ;
+    padding: 10px;
+    background-color: #FFFFFF;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+header .logo-header img{
+    width: 20%;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(73, 71, 71);
+    font-size: 15px;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    background-color: #E65100;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+}
+header .button-header{
+    display: flex;
+    padding-top: 19px;
+    gap: 5px;
+}
+header .button-header button{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 6%;
+    transition: 0.5s;
+    margin-right: 65px;
+}
+header .button-header button a{
+    text-decoration: none;
+    color: #ccc;
+}
+header .button-header .Inscription{
+    background-color: #E65100;
+    color: #fff;
+}
+header .button-header .Inscription:hover{
+    background-color: #fff;
+    color: #E65100;
+    transform: rotate(5deg);
+}
+header .button-header .Connexion:hover{
+    background-color: #E65100;
+    transform: rotate(5deg);
+    color: #fff;
+}
+/* section1 */
+.banner{
+    width: 96%;
+    margin: 0 auto;
+    height: 45vh;
+    background:url(images/banner-salad.png);
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(5px); */
+    /* backface-visibility: hidden;
+    background-repeat: no-repeat; */
+    background-blend-mode: multiply;
+    background-color: #838385;
+    margin-top: 3%;
+    border-radius: 10px;
+    position: relative;
+}
+.banner .text-banner{
+    position: absolute;
+    bottom: 1vh;
+    margin: 15px;
+    display: flex;
+    gap: 25px;
+    color: #fff;
+}
+.banner .text-banner p:first-child i{
+    color: goldenrod;
+}
+.banner .text-banner p~p span{
+    border: none;
+    background-color: green;
+    border-radius: 50%;
+}
+.banner .text-banner p~p span i{
+    color: #868383;
+}
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+main .left{
+    display: grid;
+    grid-template-rows: 14vh 14vh 14vh;
+    padding: 20px;
+    gap: 15px;
+    flex: 0.8;
+ }  
+main .left .propos{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+}
+main .left .propos p{
+    color: #868383;
+    padding-top: 10px;
+} 
+main .left .special{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+}
+main .left .special ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 10px;
+    margin: 12px;
+}
+main .left .special ul li{
+    background-color: #b6b1b1;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+main .left .service{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+} 
+main .left .service h2{
+    padding: 10px;
+}
+main .left .service span{
+    display: flex;
+    justify-content: space-around;
+}
+main .left .service span ul{
+    list-style: none;
+}
+main .left .service span ul li{
+    padding: 5px;
+}
+main .left .service span ul li i{
+    color: green;
+}
+
+main .rigth{
+    display: grid;
+    grid-template-rows: 20vh 14vh 14vh 14vh;
+    padding: 20px;
+    gap: 15px;
+    flex: 0.2;
+}
+main .rigth .contact{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+main .rigth .contact ul{
+    list-style: none;
+}
+main .rigth .contact ul li{
+    padding: 5px;
+    margin: 10px;
+}
+main .rigth .experience{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+main .rigth .experience p{
+    /* padding-top: 10px; */
+    margin: 15px;
+}
+main .rigth .langue{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+main .rigth .langue ul{
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    gap: 15px;
+}
+main .rigth .langue ul li{
+    background-color: #b6b1b1;
+    padding: 5px;
+    border-radius: 10px;
+}
+main .rigth .btn-contact{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    position: relative;
+}
+main .rigth .btn-contact button{
+    background-color: blue;
+    border: none;
+    width: 90%;
+    padding: 10px;
+    position: absolute;
+    top: 35%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+main .rigth .btn-contact button:hover{
+    transform: scale(1.2);
+    margin-left: 20%;
+    width: 50%;
+}
+
+/* footer */
+footer{
+    background-color: rgb(8, 8, 36);
+    color: whitesmoke;
+    margin-top: 20px;
+}
+footer .table{
+    margin: 0 auto;
+    padding: 20px;
+}
+footer .table .table-col{
+    display: flex;
+    justify-content: space-between;
+}
+footer .table .table-col pre span{
+    font-weight: bold;
+}
+footer hr{
+    width: 95%;
+    margin: 0 auto;
+}
+footer .table  p{
+    text-align: center;
+}
