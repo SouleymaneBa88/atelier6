@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doashard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <span class="logo">
+                <img src="images/logo.png" alt="logo">
+            </span>
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa-regular fa-house"></i> tableau de bord</a></li>
+                    <li><a href=""><i class="fa-solid fa-book"></i> Cours de cuisine</a></li>
+                    <li><a href=""><i class="fa-solid fa-tag"></i> Categories</a></li>
+                    <li><a href=""><i class="fa-regular fa-building"></i>Restaurants</a></li>
+                    <li><a href=""><i class="fa-regular fa-building"></i>Traiteur</a></li>
+                    <li><a href=""><i class="fa-regular fa-star"></i>Avis</a></li>
+                </ul>
+            </nav>
+            <div class="btn-sidebar">
+                <hr>
+                <button><i class="fa-solid fa-right-to-bracket"></i> Retourner a l'accueil</button>
+                <hr>
+                <button><i class="fa-solid fa-right-to-bracket"></i>  Deconnexion</button>
+            </div>
+        </section>
+        <section class="main">
+            <article class="ajouter">
+                <div class="text">
+                    <h2>Restaurants</h2>
+                    <p>Gerer les Restaurants de la plateforme</p>
+                </div>
+                <div class="btn-ajoute">
+                    <button>Ajouter un restaurant</button>
+                </div>
+            </article>
+            <article class="filtre">
+                <div class="zone-filtre">
+                <label for="zone">Zone</label><br>
+                <select name="text" id="zone">
+                    <option value="tout" selected>Toutes les zones</option>
+                    <option value="toutes" >test</option>
+                </select>
+                </div>
+                <button class="filtre-btn">Filtrer</button>
+            </article>
+            <article class="table">
+                <table>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Zone</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/image.png" alt="">
+                            <p>Le Djoloff</p>
+                        </td>
+                        <td>contact@ledjiloff.sn</td>
+                        <td>Plateau</td>
+                        <td>
+                            <p>En attente</p>
+                        </td>
+                        <td>
+                            <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/image.png" alt="">
+                            <p>Chez Loutcha</p>
+                        </td>
+                        <td>contact@chezloutcha.sn</td>
+                        <td>Plateau</td>
+                        <td>
+                            <p>En attente</p>
+                        </td>
+                        <td>
+                           <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/image.png" alt=""> -->
+                            <p>Le Thiossane</p>
+                        </td>
+                        <td>contact@lethiossane.sn</td>
+                        <td>Medina</td>
+                        <td>
+                            <p class="Verite">Verite</p>
+                        </td>
+                       <td>
+                           <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/image.png" alt=""> -->
+                            <p>Sushi Dakar</p>
+                        </td>
+                        <td>contact@sushidakar.sn</td>
+                        <td>Almadies</td>
+                        <td>
+                            <p class="Verite">Verite</p>
+                        </td>
+                        <td>
+                           <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/image.png" alt=""> -->
+                            <p>Amanda Larson</p>
+                        </td>
+                        <td>vedevi@mailinator.com</td>
+                        <td>Aut dignissimos iure</td>
+                        <td>
+                            <p>En attente</p>
+                        </td>
+                        <td>
+                            <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/image.png" alt=""> -->
+                            <p>Mara Knight</p>
+                        </td>
+                        <td>totynukiza@mailinator.com</td>
+                        <td>Possimus quis moles</td>
+                        <td>
+                            <p>En attente</p>
+                        </td>
+                        <td>
+                           <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/image.png" alt=""> -->
+                            <p>Joan Salinas</p>
+                        </td>
+                        <td>tiqotinet@mailinator.com</td>
+                        <td>Amet voluptatem ips</td>
+                        <td>
+                            <p>En attente</p>
+                        </td>
+                        <td>
+                           <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/image.png" alt=""> -->
+                            <p>Serana Thornton</p>
+                        </td>
+                        <td>mihonalah@mailinator.com</td>
+                        <td>Reprehenderit volupt</td>
+                        <td>
+                            <p>En attente</p>
+                        </td>
+                        <td>
+                           <button>Modifier</button>
+                            <button>Supprimer</button>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

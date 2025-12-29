@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #FFF3E0;
+}
+.container{
+    display: grid;
+    grid-template-areas: "sidebar main main main main"
+                         "sidebar main main main main"
+                         "sidebar main main main main";
+    height: 100vh;
+    grid-template-columns: 30vh 70vh;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #924010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.sidebar .logo img{
+    padding: 10px;
+    width: 30%;
+}
+.sidebar nav ul{
+    list-style: none;
+    padding: 10px;
+}
+.sidebar nav ul li{
+    padding: 15px;
+}
+.sidebar nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.sidebar  i{
+    color: gold;
+}
+.sidebar .btn-sidebar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -0px;
+    padding: 10px;
+    gap: 35px;  
+    left: 10px;
+}
+.sidebar .btn-sidebar hr{
+    width: 13vw;
+}
+.sidebar .btn-sidebar button{
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #924010;
+}
+
+.main{
+    grid-area: main;
+    background-color: #F6F9FC;
+    display: grid;
+    grid-template-rows:10vh 15vh 70vh;
+    padding: 20px;
+}
+.main .ajouter{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px;
+}
+.main .ajouter button{
+    color: #fff;
+    background-color: rgb(151, 78, 10);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.filtre{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin: 15px;
+}
+.filtre select{
+    width: 73vw;
+    padding: 10px;
+}
+.filtre button{
+    height: 10%;
+    margin-top: 2%;
+    padding: 12px 2%;
+    color: #fff;
+    background-color: #924010;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.table{
+    background-color: rgb(250, 246, 246);
+    margin: 15px;
+    padding: 20px;
+}
+.table table {
+    padding: 20px;
+    width: 78vw;
+    margin: 0 auto;
+    height: 60vh;
+    border-radius: 10px;
+}
+.table table tr {
+    padding: 10px;
+    text-align: center;
+}
+
+.table table tr th,td{
+    border-bottom: 2px solid gray;
+    background-color: #fff;
+}
+
+.table table tr td:nth-of-type(4) p{
+    color: orange;
+    background-color: yellow;
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.table table tr td:nth-of-type(4) .Verite{
+    color: #924010;
+    background-color: green;
+    margin: 0 auto;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.table table tr td button{
+    border: none;
+    color: #924010;
+}
+
+.table table tr td button:first-child{
+    color: blue;
+}
+
