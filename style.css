@@ -143,10 +143,12 @@ header .button-header .Connexion:hover{
 }
 #home .note .div-not{
     display: flex;
-    margin: 15px;
+    /* margin: 15px; */
     gap: 10px;
-    padding: 30px;
-    margin-left: 20%;
+    /* padding: 10px; */
+    margin-left: 30%;
+    position: absolute;
+    bottom:  -15%;
 }
 #home .note .div-not div{
     border: 2px solid #fff;
