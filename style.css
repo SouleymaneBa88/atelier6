@@ -9,6 +9,9 @@ body{
     /* padding: 10px 4%; */
     background-color: #FFF3E0;  
 }
+.container{
+    overflow: hidden;
+}
 header{
     display: flex;
     justify-content:space-between ;
@@ -19,6 +22,7 @@ header{
     width: 100%;
     z-index: 2;
     transform: rotateY('90deg');
+    overflow: hidden;
 }
 header .logo-header img{
     width: 20%;
@@ -80,12 +84,14 @@ header .button-header .Connexion:hover{
 #home{
     height: 75vh;
     text-align: center;
+    /* overflow: hidden; */
 }
 #home .div{
     position: relative;
     opacity: 0.6;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     padding: 10px;
 }
 #home .font {
@@ -101,6 +107,8 @@ header .button-header .Connexion:hover{
 .text{
     margin-top: 20vh;
     margin-left: 10vh;
+    overflow: hidden;
+
 }
 #home h1{
     color: #fff;
@@ -138,17 +146,17 @@ header .button-header .Connexion:hover{
     background-color: #fff;
     border-radius: 10px;
     position: relative;
-    bottom: 150px;
+    /* bottom: 150px; */
     margin: 10px;
 }
 #home .note .div-not{
     display: flex;
-    /* margin: 15px; */
-    gap: 10px;
-    /* padding: 10px; */
-    margin-left: 30%;
+    gap: 5px;
+    /* margin-left: 15%; */
+    /* margin: 20% auto; */
     position: absolute;
-    bottom:  -15%;
+    bottom:  -5%;
+    left: 20%;
 }
 #home .note .div-not div{
     border: 2px solid #fff;
@@ -166,9 +174,10 @@ header .button-header .Connexion:hover{
 
 #service{
     background-color: #FFFFFF;
-    margin-top: 45vh;
+    margin-top: 25vh;
     text-align: center;
     height: 35vh;
+    /* overflow: hidden; */
 }
 
 #service .bloc p{
@@ -214,6 +223,7 @@ header .button-header .Connexion:hover{
     /* padding: 3% 8%; */
     text-align: center;
     padding-bottom: 10px;
+    overflow: hidden;
 }
 .found h2{
     padding: 25px;
@@ -290,6 +300,7 @@ header .button-header .Connexion:hover{
 .livrer{
     height: 45vh;
     /* margin-top: 20px; */
+    overflow: hidden;
 }
 .livrer .div-livrer{
     background-color: #3A1403 ;
@@ -336,6 +347,7 @@ header .button-header .Connexion:hover{
 footer{
     background-color: rgb(8, 8, 36);
     color: whitesmoke;
+    overflow: hidden;
 }
 footer .table{
     margin: 0 auto;
@@ -354,4 +366,142 @@ footer hr{
 }
 footer .table  p{
     text-align: center;
+}
+.mch{
+    display: none;
+}
+/* responsive format mobie */
+@media screen and (max-width: 560px) {
+    body{
+        font-size: 16px;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: "header"
+                             "main"
+                             "footer";
+        gap: 10px;
+        overflow: hidden;
+        position: sticky;
+    }
+    .header{
+        grid-area: header;
+        width: 100%;
+        padding: 5px;
+        color: #3A1403;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+    }
+    .header.logo-header{
+        max-width: 100%;
+    }
+    .header nav{
+        display: none;
+    }
+    .header .button-header button{
+        display: none;
+    }
+    .header menu-nav{
+        display: none;
+    }
+    .header img{
+        max-width: 100%;
+    }
+    i{
+        color: #3A1403;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        left: 80%;
+        cursor: pointer;
+    }
+    label{
+        display: inline-block;
+        padding: 10px;
+    }
+    #menu-nav{
+        position: absolute;
+        top: 0;
+        left: -10%;
+        transform: translateX(0);
+    }
+      #menu-nav:checked~nav{
+        display: block;
+      }
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100vh;
+        margin-bottom: 10%;
+        
+        /* overflow: scroll; */
+        /* text-align: center !important; */
+    }
+    #home .font{
+        height: 65%;
+    }
+    #home .div{
+        font-size: 16px !important;
+        text-align: center;
+        margin-right: 40%;
+        position: absolute;
+        top: -10%;
+        /* overflow: hidden; */
+    }
+    #home .cours-input{
+        position: absolute;
+        top: -10%;
+        left: -50%;
+    }
+    #home .cours-input img{
+        width: 40% !important;
+        height: 10vh !important;
+    }
+    #home .note .div-not{
+        display: grid;
+        grid-template-columns: repeat(2,30vh);
+        position: absolute;
+        left: 10%;
+        bottom: -5%;
+        height: 35%;
+    }
+    #home .note .div-not div{
+        width: 75%;
+    }
+      #service {
+        height: 75vh;
+      }
+    #service .bloc{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        position: absolute;
+        /* top: -20%; */
+        bottom: 60%;
+    }
+    .found{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .avis{
+        height: 27%;
+    }
+    .livrer{
+        text-align: center;
+        margin-right: 3%;
+    }
+     
+    .footer .table .table-col{
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
