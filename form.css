@@ -331,6 +331,7 @@ footer{
     background-color: rgb(8, 8, 36);
     color: whitesmoke;
     margin-top: 20px;
+    height: 35vh;
 }
 footer .table{
     margin: 0 auto;

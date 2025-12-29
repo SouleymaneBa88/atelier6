@@ -158,17 +158,17 @@ main .left .service{
 main .left .service h2{
     padding: 10px;
 }
-main .left .service span{
+main .left .service section{
     display: flex;
     justify-content: space-around;
 }
-main .left .service span ul{
+main .left .service section ul{
     list-style: none;
 }
-main .left .service span ul li{
+main .left .service section ul li{
     padding: 5px;
 }
-main .left .service span ul li i{
+main .left .service section ul li i{
     color: green;
 }
 
