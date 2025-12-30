@@ -1,0 +1,355 @@
+@media screen and (max-width:600px) {
+    body{
+        font-size: 1em;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #F2EFDF;
+    }
+    .container{
+        /* grid-template-areas: ; */
+        position: sticky;
+        top: 0;
+        /* overflow: hidden; */
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    header img{
+        width: 30%;
+    }
+    header nav{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    header .menu-nav{
+        padding: 5%;
+    }
+    header .menu-nav label i{
+        cursor: pointer;
+    }
+    header input[type="checkbox"]{
+        display: none;
+    }
+    #home .font{
+        background: url(images/banner-head-accueil.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        background-blend-mode: multiply;
+        background-color: #61260b;
+        color: #fff;
+        padding: 5%;
+    }
+   
+     #home .font .cours-input img{
+        width: 40%;
+        margin-left: 20%;
+        height: 20%;
+        border-radius: 10px;
+        transform: rotate(90deg);
+    } 
+    #home .note .div-not{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3%;
+        padding: 5%;
+    }
+    #home .note .div-not div{
+        border: none;
+        background-color: #fff;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    #service{
+        height: 100vh;
+        background-color: #FFFFFF;
+        padding: 5%;
+    }
+    #service .bloc .blc1,.blc2,.blc3{
+        border: none;
+        margin: 4%;
+        background-color: antiquewhite;
+        text-align: center;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        padding: 2%;
+        font-size: 1em;
+    }
+    .found{
+        height: 45vh;
+        padding: 4%;
+    }
+    .found .map-found{
+        margin-left: 10%;
+    }
+    .found h2{
+        font-size: 1em;
+    }
+    .avis{
+        height: 100vh;
+        background-color: #FFFFFF;
+    }
+    .avis .commentaires{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .avis .commentaires i{
+        color: goldenrod;
+    }
+    .avis .commentaires .primairo,.secondo,.tres,.quatro{
+        border: none;
+        margin: 5%;
+        border-radius: 2%;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        padding: 5%;
+    }
+    .avis .commentaires div {
+        position: relative;
+    }
+    .avis .commentaires div span{
+        border-radius: 50%;
+        background-color: orange;
+        padding: 2%;
+    }
+    .avis .commentaires div .first{
+        position: absolute;
+        bottom: -95%;
+        margin-left: 20%;
+    }
+    .livrer{
+        width: 120vh;
+        height: 33vh;
+    }
+    .livrer .font-livrer{
+        background:url(images/banner-head-accueil.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: #d35f2a;
+        padding: 5%;
+
+    }
+    .livrer .font-livrer .text-livrer{
+        text-align: left;
+        font-size: 1rem;
+        color:#FFFFFF;
+    }
+    .livrer .font-livrer .text-livrer h1{
+        font-size: 1em;
+    }
+    .livrer .font-livrer .text-livrer button{
+        margin-left: 10%;
+        padding: 1%;
+        background-color: #d35f2a;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    footer{
+    background-color: rgb(8, 8, 36);
+    color: #fff;
+    }
+    footer .table{
+        padding: 15%;
+    }
+    footer .table .table-col pre{
+        margin-left: -50%;
+    }
+    footer p{
+        text-align: center;
+    }
+     
+}
+
+
+/* destop */
+@media screen and (min-width:1025px) {
+    body{
+        font-size: 1em;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #F2EFDF;
+    }
+    .container{
+        /* grid-template-areas: ; */
+        position: sticky;
+        top: 0;
+        /* overflow: hidden; */
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    header img{
+        width: 30%;
+    }
+    header nav{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    header .menu-nav{
+        padding: 5%;
+    }
+    header .menu-nav label i{
+        cursor: pointer;
+    }
+    header input[type="checkbox"]{
+        display: none;
+    }
+    #home .font{
+        background: url(images/banner-head-accueil.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        background-blend-mode: multiply;
+        background-color: #61260b;
+        color: #fff;
+        padding: 5%;
+    }
+   
+     #home .font .cours-input img{
+        width: 40%;
+        margin-left: 20%;
+        height: 20%;
+        border-radius: 10px;
+        transform: rotate(90deg);
+    } 
+    #home .note .div-not{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3%;
+        padding: 5%;
+    }
+    #home .note .div-not div{
+        border: none;
+        background-color: #fff;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    #service{
+        height: 100vh;
+        background-color: #FFFFFF;
+        padding: 5%;
+    }
+    #service .bloc .blc1,.blc2,.blc3{
+        border: none;
+        margin: 4%;
+        background-color: antiquewhite;
+        text-align: center;
+        border-radius: 5%;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        padding: 2%;
+        font-size: 1em;
+    }
+    .found{
+        height: 45vh;
+        padding: 4%;
+    }
+    .found .map-found{
+        margin-left: 10%;
+    }
+    .found h2{
+        font-size: 1em;
+    }
+    .avis{
+        height: 100vh;
+        background-color: #FFFFFF;
+    }
+    .avis .commentaires{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .avis .commentaires i{
+        color: goldenrod;
+    }
+    .avis .commentaires .primairo,.secondo,.tres,.quatro{
+        border: none;
+        margin: 5%;
+        border-radius: 2%;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        padding: 5%;
+    }
+    .avis .commentaires div {
+        position: relative;
+    }
+    .avis .commentaires div span{
+        border-radius: 50%;
+        background-color: orange;
+        padding: 2%;
+    }
+    .avis .commentaires div .first{
+        position: absolute;
+        bottom: -95%;
+        margin-left: 20%;
+    }
+    .livrer{
+        width: 120vh;
+        height: 33vh;
+    }
+    .livrer .font-livrer{
+        background:url(images/banner-head-accueil.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: #d35f2a;
+        padding: 5%;
+
+    }
+    .livrer .font-livrer .text-livrer{
+        text-align: left;
+        font-size: 1rem;
+        color:#FFFFFF;
+    }
+    .livrer .font-livrer .text-livrer h1{
+        font-size: 1em;
+    }
+    .livrer .font-livrer .text-livrer button{
+        margin-left: 10%;
+        padding: 1%;
+        background-color: #d35f2a;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    footer{
+    background-color: rgb(8, 8, 36);
+    color: #fff;
+    }
+    footer .table{
+        padding: 15%;
+    }
+    footer .table .table-col pre{
+        margin-left: -50%;
+    }
+    footer p{
+        text-align: center;
+    }
+     
+}
+
+

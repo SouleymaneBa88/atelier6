@@ -316,8 +316,9 @@ header .button-header .Connexion:hover{
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #3A1403;
-    margin-bottom: 30%;
+    /* margin-bottom: 30%; */
     height: 45vh;
+    width: 20%;
 }
 .livrer .font-livrer .text-livrer{
     text-align: center;
