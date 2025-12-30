@@ -200,7 +200,7 @@ header .button-header .Connexion:hover{
     grid-area: blc1;
     border: 2px solid white;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
     background-color: #F2E5BD;
     padding: 20px;
 }
@@ -208,14 +208,15 @@ header .button-header .Connexion:hover{
     grid-area: blc2;
     border: 2px solid white;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
     background-color: #FDFBEA;
 }
 #service .bloc .blc3{
     grid-area: blc3;
     border: 2px solid white;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+    /* box-shadow: 5px 5px 30px rgba(0,0,0,0.5); */
     background-color: #F2E5BD;
 }
 
@@ -256,7 +257,7 @@ header .button-header .Connexion:hover{
     background-color: #FFFFFF;
     /* width: 10%; */
     padding: 20px;
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
 }
 .avis .commentaires {
     display: flex;
@@ -371,7 +372,7 @@ footer .table  p{
     display: none;
 }
 /* responsive format mobie */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 678px) {
     body{
         font-size: 16px;
     }
@@ -381,15 +382,15 @@ footer .table  p{
                              "main"
                              "footer";
         gap: 10px;
-        overflow: hidden;
-        position: sticky;
+        /* overflow: hidden;
+        position: sticky; */
     }
     .header{
         grid-area: header;
         width: 100%;
         padding: 5px;
         color: #3A1403;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 1;
         display: flex;
@@ -409,12 +410,12 @@ footer .table  p{
     .header img{
         max-width: 100%;
     }
-    i{
+    .header i{
         color: #3A1403;
         padding: 10px;
         position: absolute;
-        top: 10px;
-        left: 80%;
+        top: 4%;
+        right:  10%;
         cursor: pointer;
     }
     label{
@@ -436,72 +437,101 @@ footer .table  p{
         flex-direction: column;
     }
     #home{
-        display: flex;
-        flex-direction: column;
         position: relative;
         height: 100vh;
-        margin-bottom: 10%;
-        
-        /* overflow: scroll; */
-        /* text-align: center !important; */
     }
     #home .font{
         height: 65%;
     }
     #home .div{
-        font-size: 16px !important;
-        text-align: center;
-        margin-right: 40%;
+        font-size: 10px !important;
+        text-align: left;
+        margin-right: 20%;
         position: absolute;
-        top: -10%;
-        /* overflow: hidden; */
+        top: -15%;
     }
+    
+     #home .div h1{
+        font-size: 1rem;
+     }
     #home .cours-input{
         position: absolute;
-        top: -10%;
-        left: -50%;
+        top: 40%;
+        left: 6%;
+        /* height: 45vh; */
     }
     #home .cours-input img{
-        width: 40% !important;
-        height: 10vh !important;
+        width: 90vw ;
+        height: 23vh;
+        border-radius: 10px;
     }
     #home .note .div-not{
         display: grid;
         grid-template-columns: repeat(2,30vh);
         position: absolute;
-        left: 10%;
-        bottom: -5%;
-        height: 35%;
+        left: 2%;
+        bottom: -4%;
+        /* height: 35%; */
     }
     #home .note .div-not div{
-        width: 75%;
+        width: 65%;
     }
-      #service {
-        height: 75vh;
+    #service {
+        height: 100vh;
       }
+    #service h1,p{
+        font-size: 1rem;
+        text-align: left;
+    }
     #service .bloc{
         display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-        position: absolute;
-        /* top: -20%; */
-        bottom: 60%;
+        flex-direction: column;
+    }
+    .blc1,.blc2,.blc3{
+        height:30% ;
     }
     .found{
-        width: 70%;
+        width: 45vh;
         margin: 0 auto;
+        /* margin-; */
     }
+    
     .avis{
+        margin: 0 auto;
         height: 27%;
+        width: 100%;
     }
+    .avis h2{
+        text-align: left;
+        /* margin-left: -5%; */
+        font-size: 0.8em;
+    }
+    .avis .commentaires{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        /* margin: 0 auto; */
+    }
+     .avis .commentaires .primairo, .secondo , .tres ,.quatro{
+        width: 85%;
+     }
+
     .livrer{
         text-align: center;
-        margin-right: 3%;
+        font-size: 10px;
     }
-     
+    .livrer .text-livrer{
+        margin-left: 3%;
+    }
     .footer .table .table-col{
         grid-area: footer;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        /* margin-left: -20%; */
+        margin-left: -5%;
+        font-size: 0.4em;
+    }
+    .footer p{
+        margin-left: -30%;
     }
 }

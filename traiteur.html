@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="container">
     <!-- entete du page -->
-     <header>
+     <header class="header">
         <div class="logo-header">
             <img src="images/logo.png" alt="image du logo-header" >
+        </div>
+          <div class="mch">
+        <input type="checkbox"  id="menu-nav">
+        <label for="menu-nav"><i class="fa-solid fa-list"></i></label>
         </div>
         <nav>
             <ul>
@@ -27,7 +32,7 @@
             <button class="Inscription">Inscription</button>
         </div>
     </header>
-
+    <main class="main">
     <!-- section 1 -->
      <section class="banner">
         <span class="text-banner">
@@ -69,7 +74,7 @@
                 <button><i class="fa-solid fa-rotate-right"></i>Reinitialisation</button>
             </div>
         </div>
-        
+        <div class="sld">
         <div class="salad">
             <img src="images/image.png" alt="image de salad" >
             <span class="Verifie"><i class="fa-solid fa-check"></i>Verifie</span>
@@ -115,6 +120,7 @@
                 </form>
             </article>
         </div>
+        </div>
      </section>
 
 <!-- section3 -->
@@ -128,9 +134,10 @@
             </form>
         </article>
      </section>
+     </main>
 
      <!-- footer -->
-       <footer>
+       <footer class="footer">
     <div class="table">
         <div class="table-col">
             <pre>
@@ -179,5 +186,6 @@
         <p>© 2025 star Buffet. Tous droits reserves.</p>
     </div>
  </footer>
+ </div>
 </body>
 </html>

@@ -263,3 +263,36 @@ footer hr{
 footer .table  p{
     text-align: center;
 }
+@media screen and (max-width:678px) {
+    body{
+        font-size: 0.7em;
+       
+    }
+    .container{
+         position: sticky;
+         top: 0;
+        overflow: hidden;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav{
+        display: none;
+    }
+    header .button-header{
+        display: none;
+    }
+    header #menu-nav{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .table .table-col{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: -10%;
+    }
+}

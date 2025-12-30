@@ -58,7 +58,7 @@ header .button-header button{
     text-align: center;
     padding: 10px 6%;
     transition: 0.5s;
-    margin-right: 65px;
+    /* margin-right: 65px; */
 }
 header .button-header .Inscription{
     background-color: #E65100;
@@ -101,7 +101,7 @@ header .button-header .Connexion:hover{
     grid-template-areas: "trie trie trie trie"
                          "salad salad salad salad"
                          "salad1 salad1 salad1 salad1";
-                         padding: 10px;
+    padding: 10px;
 }
 .trie{
     grid-area:trie;
@@ -333,4 +333,144 @@ footer hr{
 }
 footer .table  p{
     text-align: center;
+}
+/* .mch{
+    display: none;
+} */
+/* responsives */
+@media screen and (max-width: 500px) {
+    body{
+        font-size: 1em;
+    }
+    .container{
+        display: grid;
+          grid-template-areas: "header"
+                                "main"
+                                "footer";
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+    }
+  .header{
+        grid-area: header;
+        width: 100%;
+        padding: 5px;
+        color: #3A1403;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+    }
+    .header.logo-header{
+        max-width: 100%;
+    }
+    .header nav{
+        display: none;
+    }
+    .header .button-header button{
+        display: none;
+    }
+    .header menu-nav{
+        display: none;
+    }
+    .header img{
+        max-width: 80%;
+    }
+    .header i{
+        color: #3A1403;
+        padding: 10px;
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        cursor: pointer;
+    }
+    label{
+        display: inline-block;
+        padding: 10px;
+    }
+    #menu-nav{
+        position: absolute;
+        top: 0;
+        left: -10%;
+        transform: translateX(0);
+    }
+      #menu-nav:checked~nav{
+        display: block;
+      }
+    .banner{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .banner .text-banner h1{
+        /* color: #3A1403; */
+        font-size: 1rem;
+    }
+     .banner .text-banner p{
+        font-size: 0.6rem;
+        text-align: left;
+     }
+     .menu{
+        display: grid;
+        grid-template-rows: 10vh 20vh 20vh;
+        /* gap: 2%; */
+        /* margin-left: -30%; */
+        width: 80%;
+        height: 150vh;
+        position: relative;
+     }
+     .menu .trie{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* margin-left: 10%; */
+        gap: 2%;
+     }
+    
+     .menu .trie h2{
+        font-size: 1em;
+        margin-left: -8%;
+     }
+     .menu .meun-trie-button{
+        display: flex;
+        gap: 2%;
+        padding: 2%;
+     }
+     .menu .sld .salad {
+        position: absolute;
+        margin: 5px;
+        top: 30vh;
+        width: 125%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+     }
+      .menu .sld .salad  img{
+        width: 70%;
+     }
+     .menu .sld .salad1 {
+        position: absolute;
+        margin: 5px;
+        top: 65vh;
+        width: 125%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+     }
+     .menu .sld .salad1 img{
+        width:  75%;
+     }
+     .menu .sld .Verifie{
+        margin-left: 35%;
+        width: 20%;
+     }
+      .footer .table .table-col{
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: -5%;
+        font-size: 0.4em;
+    }
+    .footer p{
+        margin-left: -30%;
+        }
+
+
 }
