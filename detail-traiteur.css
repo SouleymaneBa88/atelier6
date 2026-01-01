@@ -76,6 +76,9 @@ header .button-header .Connexion:hover{
     transform: rotate(5deg);
     color: #fff;
 }
+header .mch{
+    display: none;
+}
 /* section1 */
 .banner{
     width: 96%;

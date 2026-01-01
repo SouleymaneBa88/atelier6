@@ -74,6 +74,9 @@ header .button-header .Connexion:hover{
     transform: rotate(5deg);
     color: #fff;
 }
+header .menu-nav{
+        display: none;
+    }
 /* section1 */
 .banner{
     height: 45vh;
@@ -369,7 +372,7 @@ footer .table  p{
     .header .button-header button{
         display: none;
     }
-    .header menu-nav{
+    .header #menu-nav{
         display: none;
     }
     .header img{
